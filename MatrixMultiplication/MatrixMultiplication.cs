@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace MatrixMultiplication
 {
-    public partial class Form1 : Form
+    public partial class MatrixMultiplication : Form
     {
         private int N;
         private int P;
         Multiplication multiplication;
-        public Form1()
+        public MatrixMultiplication()
         {
             InitializeComponent();
         }

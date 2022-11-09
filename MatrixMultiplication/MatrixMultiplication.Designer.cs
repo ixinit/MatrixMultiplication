@@ -1,7 +1,7 @@
 ﻿
 namespace MatrixMultiplication
 {
-    partial class Form1
+    partial class MatrixMultiplication
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -43,15 +43,15 @@ namespace MatrixMultiplication
             this.btnMultParCSOpt = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMultParCannonOther = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbProc = new System.Windows.Forms.TextBox();
+            this.btnMultParCannon = new System.Windows.Forms.Button();
             this.btnCannonMultiplication = new System.Windows.Forms.Button();
             this.btnCreateTestMatrix = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btrnCannonNonCreate = new System.Windows.Forms.Button();
-            this.btnMultParCannon = new System.Windows.Forms.Button();
-            this.tbProc = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnShow = new System.Windows.Forms.Button();
-            this.btnMultParCannonOther = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatrixA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatrixB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatrixC)).BeginInit();
@@ -187,6 +187,44 @@ namespace MatrixMultiplication
             this.panel1.Size = new System.Drawing.Size(423, 94);
             this.panel1.TabIndex = 13;
             // 
+            // btnMultParCannonOther
+            // 
+            this.btnMultParCannonOther.Location = new System.Drawing.Point(201, 66);
+            this.btnMultParCannonOther.Name = "btnMultParCannonOther";
+            this.btnMultParCannonOther.Size = new System.Drawing.Size(146, 23);
+            this.btnMultParCannonOther.TabIndex = 18;
+            this.btnMultParCannonOther.Text = "Multiplication Cannon Other";
+            this.btnMultParCannonOther.UseVisualStyleBackColor = true;
+            this.btnMultParCannonOther.Click += new System.EventHandler(this.btnMultParCannonOther_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(353, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(26, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "PxP";
+            // 
+            // tbProc
+            // 
+            this.tbProc.Location = new System.Drawing.Point(353, 41);
+            this.tbProc.Name = "tbProc";
+            this.tbProc.Size = new System.Drawing.Size(37, 20);
+            this.tbProc.TabIndex = 14;
+            this.tbProc.Text = "12";
+            this.tbProc.TextChanged += new System.EventHandler(this.tbProc_TextChanged);
+            // 
+            // btnMultParCannon
+            // 
+            this.btnMultParCannon.Location = new System.Drawing.Point(201, 40);
+            this.btnMultParCannon.Name = "btnMultParCannon";
+            this.btnMultParCannon.Size = new System.Drawing.Size(146, 23);
+            this.btnMultParCannon.TabIndex = 13;
+            this.btnMultParCannon.Text = "Multiplication Cannon";
+            this.btnMultParCannon.UseVisualStyleBackColor = true;
+            this.btnMultParCannon.Click += new System.EventHandler(this.btnMultParCannon_Click);
+            // 
             // btnCannonMultiplication
             // 
             this.btnCannonMultiplication.Location = new System.Drawing.Point(222, 456);
@@ -226,34 +264,6 @@ namespace MatrixMultiplication
             this.btrnCannonNonCreate.UseVisualStyleBackColor = true;
             this.btrnCannonNonCreate.Click += new System.EventHandler(this.btrnCannonNonCreate_Click);
             // 
-            // btnMultParCannon
-            // 
-            this.btnMultParCannon.Location = new System.Drawing.Point(201, 40);
-            this.btnMultParCannon.Name = "btnMultParCannon";
-            this.btnMultParCannon.Size = new System.Drawing.Size(146, 23);
-            this.btnMultParCannon.TabIndex = 13;
-            this.btnMultParCannon.Text = "Multiplication Cannon";
-            this.btnMultParCannon.UseVisualStyleBackColor = true;
-            this.btnMultParCannon.Click += new System.EventHandler(this.btnMultParCannon_Click);
-            // 
-            // tbProc
-            // 
-            this.tbProc.Location = new System.Drawing.Point(353, 41);
-            this.tbProc.Name = "tbProc";
-            this.tbProc.Size = new System.Drawing.Size(37, 20);
-            this.tbProc.TabIndex = 14;
-            this.tbProc.Text = "4";
-            this.tbProc.TextChanged += new System.EventHandler(this.tbProc_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(353, 25);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "PxP";
-            // 
             // btnShow
             // 
             this.btnShow.Location = new System.Drawing.Point(39, 485);
@@ -264,17 +274,7 @@ namespace MatrixMultiplication
             this.btnShow.UseVisualStyleBackColor = true;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
-            // btnMultParCannonOther
-            // 
-            this.btnMultParCannonOther.Location = new System.Drawing.Point(201, 66);
-            this.btnMultParCannonOther.Name = "btnMultParCannonOther";
-            this.btnMultParCannonOther.Size = new System.Drawing.Size(146, 23);
-            this.btnMultParCannonOther.TabIndex = 18;
-            this.btnMultParCannonOther.Text = "Multiplication Cannon Other";
-            this.btnMultParCannonOther.UseVisualStyleBackColor = true;
-            this.btnMultParCannonOther.Click += new System.EventHandler(this.btnMultParCannonOther_Click);
-            // 
-            // Form1
+            // MatrixMultiplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -296,8 +296,8 @@ namespace MatrixMultiplication
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.dgvMatrixA);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MatrixMultiplication";
+            this.Text = "Matrix Multiplication";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatrixA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatrixB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatrixC)).EndInit();
